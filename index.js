@@ -12,6 +12,14 @@ bot.on('ready', () => {
         console.log(link);
     });
 });
+
+bot.user.setPresence({
+        game: {
+          name: `SCP TOPCHIK`,
+          type: "LISTENING"
+        }
+      })
+
 //команда, и то, что она должна выполнить
 bot.on('message', msg => {
     if (msg.content === prefix + 'привет') {
