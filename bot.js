@@ -2,9 +2,11 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 //подключаем файл конфигурации
 let config = require('./botconfig.json'); 
+let botinfo = require('./package.json'); 
 //"достаём" токен и префикс
 let token = config.token; 
 let prefix = config.prefix;
+let version = botinfo.version
 //создаём ссылку-приглашение для бота
 bot.on('ready', () => { 
     console.log(`Запустился бот ${bot.user.username}`);
@@ -35,5 +37,11 @@ bot.on('message', message => {
     message.reply(message.author.displayAvatarURL());
   }
 });
-
+bot.on('message', message => {
+  // If the message is "!version"
+  if (message.content === prefix + 'version') {
+    // Send the user's avatar URL
+    message.reply(`My version is ${version}`);
+  }
+});
 bot.login(token);
