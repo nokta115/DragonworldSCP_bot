@@ -28,9 +28,4 @@ bot.on('message', msg => {
         msg.reply('НЕ МЫ ЧИ');
     }
 });
-bot.on('message', msg => {
-    if (msg.content === 'гг'{
-        msg.reply('НЕ МЫ ЧИ');
-    }
-});
 bot.login(token);
