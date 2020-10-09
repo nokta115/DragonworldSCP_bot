@@ -28,4 +28,5 @@ bot.on('message', msg => {
         msg.reply('НЕ МЫ ЧИ');
     }
 });
+
 bot.login(token);
