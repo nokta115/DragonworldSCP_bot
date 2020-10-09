@@ -1,0 +1,24 @@
+{
+  "name": "dragonworldscp",
+  "version": "1.0.0",
+  "description": "It's bot for seeing online of my SCP:SL server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ustaz1505",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "git": "^0.1.5"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nokta115/DragonworldSCP_bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nokta115/DragonworldSCP_bot/issues"
+  },
+  "homepage": "https://github.com/nokta115/DragonworldSCP_bot#readme"
+}
